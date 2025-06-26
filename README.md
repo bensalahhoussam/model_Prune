@@ -20,3 +20,16 @@ Mathematically:
 ΔL ≈ ∂L/∂w × w
 
 The smaller the score, the less impact the weight/channel has on the loss — making it a candidate for pruning.
+
+## Run 
+This performs ranking, removal, finetuning and evaluation in one pruning iteration.  
+```python prune.py --load YOUR_MODEL.pth --channel_txt YOUR_CHANNELS.txt```
+
+
+| Iteration  | Ranking Iterations | Pruned Channels | Validation DICE | File Size (MB) |
+| --- | --- | --- | --- | --- | --- |
+| 0 | N/A | N/A  | 0.975 | 52.4 |
+| 1 | 500 | 300  | 0.938 | 44.4 |
+| 2 | 500 | 300 | 0.91 | 38.9 |
+| 3 | 500 | 300  | 0.923 | 33.2 |
+| 4 | 500 | 300 | 0.945 | 27.2 |
