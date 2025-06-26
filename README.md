@@ -29,7 +29,7 @@ This performs ranking, removal, finetuning and evaluation in one pruning iterati
 | Iteration | Ranking Iterations | Pruned Channels | Validation DICE | File Size (MB) |
 |-----------|--------------------|------------------|------------------|----------------|
 | 0         | N/A                | N/A              | 0.975            | 52.4           |
-| 1         | 500                | 300              | 0.958            | 44.4           |
-| 2         | 500                | 300              | 0.920            | 38.9           |
-| 3         | 500                | 300              | 0.913            | 33.2           |
-| 4         | 500                | 300              | 0.905            | 27.2           |
+| 1         | 500                | 300              | 0.968            | 44.4           |
+| 2         | 500                | 300              | 0.960            | 38.9           |
+| 3         | 500                | 300              | 0.957            | 33.2           |
+| 4         | 500                | 300              | 0.951            | 27.2           |
